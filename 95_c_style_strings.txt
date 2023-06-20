@@ -1,0 +1,74 @@
+
+Section 10: C-Style Strings
+------------------------------------------------------------------
+
+C-Style Strings
+
+	- Sequence of characters
+
+		+ contiguous in memory
+
+		+ implemented as an array of characters
+
+		+ terminated by a null character (null)
+
+			- null - character with a value
+			  of zero
+
+		+ referred to as zero or null terminated
+		  strings
+
+	- String literal
+
+		+ sequence of characters in double 
+		  quotes, e.g., "Frank"
+
+		+ constant
+
+		+ terminated with null character
+
+
+Library - #include <cstring>
+
+	Functions that work with C-style strings
+
+		+ Copying
+
+		+ Concatenation
+
+		+ Comparison
+
+		+ Searching
+
+		+ and others
+
+	A few examples
+
+		char str[80];
+
+		strcpy(str, "Hello "); // copy
+
+		strcat(str, "there");  // concatenate
+
+		cout << strlen(str);   // 11
+
+		strcmp(str, "Another "); // > 0
+
+
+Library - #include <cstdlib>
+
+	General purpose functions
+
+		+ includes functions to convert C-style
+		  strings to
+
+			- integer
+
+			- float
+
+			- long
+
+			- etc.
+
+
+
